@@ -30,6 +30,9 @@ public class Deberdecristhianlimongi {
         String miusuario="cristhian",micontrasena="12345";
         String usuario="",clave="";
         String sigue="",resp="S";
+         
+        int opcion=0,valor_1=0,valor_2=0;
+        int contador=0,bandera=0,suma=0,resta=0,division=0,multiplicacion=0;
     }
      public static int Ingreso (int valor1 ){
         Scanner ingresar = new Scanner(System.in);
