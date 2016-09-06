@@ -26,6 +26,10 @@ public class Deberdecristhianlimongi {
      
           //hallar el mayor
         mayor=hayar(numero,numero1,numero2);
+        Scanner mientrada=new Scanner(System.in);
+        String miusuario="cristhian",micontrasena="12345";
+        String usuario="",clave="";
+        String sigue="",resp="S";
     }
      public static int Ingreso (int valor1 ){
         Scanner ingresar = new Scanner(System.in);
