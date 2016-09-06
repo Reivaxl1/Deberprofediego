@@ -33,6 +33,70 @@ public class Deberdecristhianlimongi {
          
         int opcion=0,valor_1=0,valor_2=0;
         int contador=0,bandera=0,suma=0,resta=0,division=0,multiplicacion=0;
+         while (bandera ==0) {
+        System.out.println("ingrese su nombre de usuario");
+        usuario=mientrada.nextLine();
+        System.out.println("ingese su nombre de usuario");
+        clave=mientrada.nextLine();
+        if (usuario.equals(miusuario)&&(clave.equals(micontrasena))){
+            bandera=1;}
+        else {
+            contador=contador+1;
+            System.out.printf("usuario o contraseña incorrecta van %d/3 de intentos \n ",contador);}
+         if (contador==3){
+                bandera=1;}
+         
+         if (usuario.equals(miusuario)&&(clave.equals(micontrasena))){
+            System.out.println("bienvenido al sistema");
+           do {
+               
+               System.out.println("***calculador basica**");
+               System.out.println("1_sumar              *");
+               System.out.println("2_restar             *");
+               System.out.println("3_multiplicar        *");
+               System.out.println("4_dividir            *");
+               System.out.println("***escoja la que le guste***");
+               System.out.println("****************************");
+               opcion=mientrada.nextInt();
+               if (opcion==1){
+                   System.out.println("ingrese el 1 valor");
+                  valor_1=mientrada.nextInt();
+                  System.out.println("ingrese el 2 valor");
+                  valor_2=mientrada.nextInt();
+                  System.out.println(" resutlado");
+                  suma=valor_1+valor_2;
+                  System.out.printf(" el resultado de la suma de las 2 variable es ",suma);
+               }
+               if (opcion==2){
+                    System.out.println("ingrese el 1 valor");
+                  valor_1=mientrada.nextInt();
+                  System.out.println("ingrese el 2 valor");
+                  valor_2=mientrada.nextInt();
+                  System.out.println(" resutlado");
+                  resta=valor_1-valor_2;
+                  System.out.printf(" el resultado de la resta de las 2 variable es ",resta);}
+               if (opcion==3){
+                    System.out.println("ingrese el 1 valor");
+                  valor_1=mientrada.nextInt();
+                  System.out.println("ingrese el 2 valor");
+                  valor_2=mientrada.nextInt();
+                  System.out.println(" resutlado");
+                  multiplicacion=valor_1*valor_2;
+                  System.out.printf(" el resultado de la multiplicacion de las 2 variable es ",multiplicacion);}
+               if(opcion==4){
+                   System.out.println("ingrese el 1 valor");
+                  valor_1=mientrada.nextInt();
+                  System.out.println("ingrese el 2 valor");
+                  valor_2=mientrada.nextInt();
+                  System.out.println(" resutlado");
+                  division=valor_1/valor_2;
+                  System.out.printf(" el resultado de la division de las 2 variable es ",division);}
+                  
+                  } while (bandera==0);}
+                else {
+              System.out.println("se cerro el sistema son 5 dolares para 1 intento mas ");}
+           }
+               
     }
      public static int Ingreso (int valor1 ){
         Scanner ingresar = new Scanner(System.in);
